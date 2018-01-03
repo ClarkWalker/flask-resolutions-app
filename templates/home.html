@@ -4,5 +4,10 @@
       <input type="text" name="title">
       <input type="submit" value="Add">
     </form>
+
+    <h1>Resolutions</h1>
+    {% for resolution in resolutions %}
+      <p>{{resolution.title}}</p>
+    {% endfor %}
   </body>
 </html>
